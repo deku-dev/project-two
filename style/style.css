@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../font/PTSans-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  --main-block-color: #777;
+  --main-font-color: white;
+  --second-font-color: #767676;
+  line-height: 22px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+a {
+  color: var(--main-font-color);
+  transition: all 0.2s ease-in-out;
+}
+.container {
+  width: 960px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.header {
+  padding: 65px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header-block {
+  font-size: 40px;
+  line-height: normal;
+  font-weight: lighter;
+  color: var(--second-font-color);
+}
+.navigation {
+  background-color: var(--main-block-color);
+  width: 100%;
+  display: flex;
+  height: 80px;
+}
+.nav-list {
+  margin: auto;
+  max-width: 960px;
+  font-size: 30px;
+  display: flex;
+  flex-flow: row nowrap;
+  color: var(--main-font-color);
+  align-items: center;
+  list-style: none;
+}
+.nav-item {
+  margin: 10px;
+}
+.nav-link,
+.link-news {
+  text-decoration: none;
+}
+.nav-link:hover,
+.link-news:hover {
+  text-decoration: underline;
+}
+.slider {
+  background-color: #f9f9f9;
+  position: relative;
+  top: -62px;
+  width: 100%;
+  z-index: -1;
+}
+.slider-image {
+  display: block;
+  margin: 0 auto;
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+.content {
+  width: 980px;
+  padding: 0 10px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.news-block {
+  width: 36%;
+  color: var(--main-font-color);
+  background-color: var(--main-block-color);
+  padding: 22px 50px 80px 33px;
+}
+.news-block i {
+  display: block;
+}
+.article-news {
+  margin: 15px 0;
+}
+.title-news {
+  margin-bottom: 30px;
+}
+.archive-block {
+  text-align: right;
+}
+.company-block {
+  color: var(--second-font-color);
+  width: 64%;
+  margin: 20px 0 0 50px;
+}
+.paragraph {
+  margin: 10px 0;
+}
+.container-cont {
+  margin-bottom: 150px;
+  flex: 1 0 auto;
+}
+.footer {
+  padding: 50px;
+  color: var(--main-font-color);
+  flex: 0 0 auto;
+  background-color: var(--main-block-color);
+}
+.footer-cont {
+  margin: 0 auto;
+  width: 980px;
+  padding: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+footer a:hover,
+.archive:hover {
+  color: #000000;
+}
+.footer-menu {
+  list-style: none;
+}
+.footer-logo {
+  margin: 8px;
+}
+.site-descr {
+  display: flex;
+  justify-content: center;
+}
